@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>One Page Design</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding-top: 56px;
+        padding-bottom: 190px;
+      }
+
+      p {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+      }
+
+      h1 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 900;
+      }
+
+      h2 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+      }
+
+      @media (max-width: 767px) {
+        body {
+          padding-top: 0;
+        }
+      }
+
+      .carousel-item {
+        height: 600px;
+      }
+
+      .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+
+      .carousel-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .social-icons {
+        font-size: 24px;
+        margin: 0 10px;
+      }
+
+      .zigzag-row {
+        margin: 20px 0;
+        padding-bottom: 50px;
+      }
+
+      .zigzag-text {
+        text-align: center;
+      }
+
+      .zigzag-image img {
+        max-width: 100%;
+        height: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/paw.png"
+          alt="Paw Logo"
+          height="30"
+          class="d-inline-block align-top"
+        />
+        The Black Pug
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="images/pug1.jpg"
+              alt="First slide"
+            />
+            <div class="carousel-text">
+              <h1>The Black Pug</h1>
+              <p>Pouring happiness one bark at a time</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/pug2.jpg"
+              alt="Second slide"
+            />
+            <div class="carousel-text">
+              <h1>The Black Pug</h1>
+              <p>Pouring happiness one bark at a time</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/pug3.jpg"
+              alt="Second slide"
+            />
+            <div class="carousel-text">
+              <h1>The Black Pug</h1>
+              <p>Pouring happiness one bark at a time</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/pug4.jpg"
+              alt="Second slide"
+            />
+            <div class="carousel-text">
+              <h1>The Black Pug</h1>
+              <p>Pouring happiness one bark at a time</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/pug5.jpg"
+              alt="Second slide"
+            />
+            <div class="carousel-text">
+              <h1>The Black Pug</h1>
+              <p>Pouring happiness one bark at a time</p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- About us Section -->
+    <section id="section1">
+      <div class="container">
+        <h2 class="text-center py-4">ABOUT US</h2>
+        <div class="row zigzag-row">
+          <div class="col-md-6 zigzag-text">
+            <p>
+              At "The Black Pug," our chefs are the real barktenders of flavor,
+              crafting culinary masterpieces that will make your taste buds do a
+              happy tail wag! These kitchen wizards are no ordinary chefs;
+              they're pawsitively the best in town. With a passion for creating
+              tail-licking dishes, our chefs bring a blend of skills and
+              creativity to the kitchen. So, sit back, relax, and let our chefs
+              pamper your taste buds with flavors that are simply pup-tastic.
+              Whether you're a fan of fetching appetizers, delightful mains, or
+              sweet treats, our chefs have got it all covered.
+            </p>
+          </div>
+          <div class="col-md-6 zigzag-image">
+            <img src="images/bucatar.jpg" alt="Chef" />
+          </div>
+        </div>
+
+        <div class="row zigzag-row">
+          <div class="col-md-6 zigzag-image">
+            <img src="images/pahare.jpg" alt="Drinks" />
+          </div>
+          <div class="col-md-6 zigzag-text">
+            <p>
+              Our dedicated drink artisans, akin to meticulous conductors, craft
+              a diverse and delightful symphony of flavors. Every sip unfolds
+              like a unique musical note, creating a harmonious journey for your
+              palate. Join us to savor these meticulously composed moments,
+              where each flavor is a stroke of artistry. Raise your glass to an
+              experience that goes beyond mere drinks – a symphony thoughtfully
+              crafted for your utmost enjoyment. Cheers to the intricate and
+              rich tapestry of tastes awaiting you at "The Black Pug"!
+            </p>
+          </div>
+        </div>
+
+        <div class="row zigzag-row">
+          <div class="col-md-6 zigzag-text">
+            <p>
+              Nestled in the vibrant heart of Cluj-Napoca, "The Black Pug"
+              stands as a culinary oasis, strategically positioned for your
+              convenience. Our prime location in the city center ensures that
+              we're a stone's throw away from everything you desire. Whether
+              you're exploring cultural landmarks, indulging in retail therapy,
+              or seeking entertainment, our restaurant is your gateway to the
+              city's pulsating energy. Immerse yourself in the dynamic
+              surroundings, relishing the seamless blend of urban charm and
+              culinary excellence. At "The Black Pug," not only do we offer
+              delectable delights, but we also provide an ideal starting point
+              for your exploration of Cluj-Napoca's diverse attractions.
+            </p>
+          </div>
+          <div class="col-md-6 zigzag-image">
+            <img src="images/restaurant.jpg" alt="Interior" />
+          </div>
+        </div>
+
+        <div class="row zigzag-row">
+          <div class="col-md-6 zigzag-image">
+            <img src="images/dogoo.jpg" alt="Pug" />
+          </div>
+          <div class="col-md-6 zigzag-text">
+            <p>
+              Our endearing Pug waiters at "The Black Pug" redefine hospitality
+              with their charming presence. These furry companions, more than
+              just servers, bring an extra dash of joy to your dining
+              experience. With wagging tails and adorable antics, they create a
+              warm and welcoming atmosphere. Ever-ready to assist, these
+              four-legged servers embody our commitment to personalized service.
+              At "The Black Pug," our Pug waiters are not just part of the team;
+              they're the heart and soul of our unique and delightful dining
+              ambiance, ensuring your visit is filled with smiles and tail wags.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="section2" class="py-4">
+      <div class="container">
+        <h2 class="text-center py-4">MENU</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="images/drinks1.jpg"
+                class="card-img-top"
+                alt="Lemonade"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lemonade</h5>
+                <p class="card-text">
+                  Price: $8<br />
+                  <span class="badge badge-success">Available</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="images/drinks2.jpg" class="card-img-top" alt="Aperol" />
+              <div class="card-body">
+                <h5 class="card-title">Aperol</h5>
+                <p class="card-text">
+                  Price: $10<br />
+                  <span class="badge badge-danger">Out of stock</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="images/food1.jpg" class="card-img-top" alt="Steak" />
+              <div class="card-body">
+                <h5 class="card-title">Steak</h5>
+                <p class="card-text">
+                  Price: $30<br />
+                  <span class="badge badge-success">Available</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="images/food2.jpg"
+                class="card-img-top"
+                alt="Pizza Capriciosa"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza Capriciosa</h5>
+                <p class="card-text">
+                  Price: $20<br />
+                  <span class="badge badge-success">Available</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="section3">
+      <h2 class="text-center py-4">CONTACT</h2>
+      <div class="container">
+        <div class="content">
+          <h2>We cannot wait to see you :)</h2>
+          <div class="d-flex align-items-center icon-with-text">
+            <img
+              src="images/pin.png"
+              alt="Icon"
+              class="mr-2"
+              style="height: 25px"
+            />
+            <p>Bulevardul Eroilor 20</p>
+          </div>
+          <div class="d-flex align-items-center icon-with-text">
+            <img
+              src="images/phone.png"
+              alt="Icon"
+              class="mr-2"
+              style="height: 25px"
+            />
+            <p>+40711111111</p>
+          </div>
+
+          <div class="map-container mt-4">
+            <iframe
+              class="map-iframe w-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d23.5940246!3d46.769864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37ba1c60c1d9cf46!2sBulevardul%20Eroilor%2020%2C%20Cluj-Napoca%20400394!5e0!3m2!1sen!2sus!4v1552353927558"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; The Black Pug. All rights reserved.</p>
+        <p>Contact: contact@theblackpug.com</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/">
+            <img
+              src="images/facebook.png"
+              alt="Facebook"
+              class="img-fluid"
+              style="width: 25px"
+            />
+          </a>
+          <a href="https://instagram.com/">
+            <img
+              src="images/instagram.png"
+              alt="Instagram"
+              class="img-fluid"
+              style="width: 25px"
+            />
+          </a>
+          <a href="https://twitter.com/">
+            <img
+              src="images/twitter.png"
+              alt="Twitter"
+              class="img-fluid"
+              style="width: 25px"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
